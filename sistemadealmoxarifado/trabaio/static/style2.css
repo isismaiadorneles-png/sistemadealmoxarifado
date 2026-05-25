@@ -1,0 +1,20 @@
+/*criação de item*/
+.letras{
+    font-family:verdana ;
+}
+#input{
+    width: 40%;       /* Largura total da div pai */
+    height: 40px;      /* Aumenta a altura */
+    font-size: 20px;   /* Aumenta o tamanho da fonte interna */
+    padding: 10px;     /* Espaçamento interno para melhorar aparência*/
+}
+
+#caixa2{
+position: absolute;
+top: 520px;
+}
+
+#caixa3{
+position: absolute;
+top: 630px;
+}

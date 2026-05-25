@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../static/solicitar.js" defer></script>
+    <link href="../static/style4.css" rel="stylesheet">
+    <title>Entrada e Saída</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="../static/style4.css" rel="stylesheet">
+</head>
+<body style="background-color: rgba(19, 43, 121, 1);">
+  <nav id="navbarenzo" class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" id="navbar">
+    <a class="navbar-brand" href="#" style="color: #F86803; font-size: 25px; font-family: Verdana;">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" style="color: aliceblue; font-size: 20px; font-family: Verdana;">criar itens</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="estoque.html" style="color: aliceblue; font-size: 20px; font-family: Verdana;">estoque</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html" style="color: aliceblue; font-size: 20px; font-family: Verdana;">login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+   <div id="divprincipal"> <!--aqui é o cabeçalho-->
+     <img id="imagsenai" src="../static/senai.branco (2).png"> 
+     <h1 id="H1S">Solicitar</h1> 
+     <h1 id="H1SE">Saída e Entrada</h1>
+   </div><!--fim do cabeçalho-->
+   <br>
+   <div id="divazulzin"><!--bloco azul borda branca-->
+     <div id="divsaiEentra"><!--bloco branco Saida e Entrada-->
+        <h1 id="itentxt">Itens:</h1>
+        <h1 id="quanttxt">Quantidade:</h1>
+        <input placeholder="Digite o item desejado" type="text" id="inputitem">
+        <input placeholder="Digite a quantidade" type="text" id="inputquantidade">
+        <button onclick="alerta()" id="entrada" class="btn-setor">ENTRADA</button>
+        <button onclick="alerta()" id="saida" class="btn-setor">SAIDA</button>
+     </div>
+   </div>
+</body>
+</html>
