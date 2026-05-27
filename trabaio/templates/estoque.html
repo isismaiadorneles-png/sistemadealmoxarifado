@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link href="../static/style3.css" rel="stylesheet">
+    <script src="../static/estoque.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body style="background-color: rgba(19, 43, 121, 1);">
+  <!--aqui inicia a navbar-->
+  <nav id="navbarenzo" class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" id="navbar">
+    <a class="navbar-brand" href="#" style="color: #F86803; font-size: 25px; font-family: Verdana;">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <!--mudei a cor da navegação da pagina-->
+        <li class="nav-item">
+          <a class="nav-link" href="estoque.html" style="color: rgb(255, 136, 0); font-size: 20px; font-family: Verdana;">Estoque</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" style="color: aliceblue; font-size: 20px; font-family: Verdana;">Criar Itens</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="solicitar.html" style="color: aliceblue; font-size: 20px; font-family: Verdana;">Solicitações</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html" style="color: aliceblue; font-size: 20px; font-family: Verdana;">Login</a>
+        </li>
+        <!--fim da mudança-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--fim da navbar-->
+  <div id="divprincipal"> <!--aqui é o cabeçalho-->
+     <img id="imagsenai" src="../static/senai-logo.jpeg"> 
+     <h1 id="H1EA">Estoque Atual</h1> 
+  </div><!--fim do cabeçalho-->
+  <br>
+  <div id="divbranco"><!--aqui é bloco branco do centro-->
+    <div id="divazul" ><!--DIV do bloco azul-->
+        </table>
+    </div> <!--aqui é a DIV da pagina azul-->
+    <div class="setores"><!--DIV botao de setores-->
+     <button id="botao todos" onclick="filtrar('Todos')" class="btn-setor" class="Todos" type="button" style="position: absolute; left: 35px; top: 5px; height: 35px; width: 200px;">Todos</button>
+     <button id="botao MRO" onclick="filtrar('MRO')" class="btn-setor" class="MRO" type="button" style= "position: absolute; left: 250px; top: 5px; height: 35px; width: 200px;">MRO</button>
+     <button id="botao escritorio" onclick="filtrar('Escritorio')" class="btn-setor" class="Escritorio" type="button" style="position: absolute; left: 465px; top: 5px; height: 35px; width: 200px;">Escritorio</button>
+     <button id="botao" onclick="filtrar('Limpeza')" class="btn-setor" class="Limpeza" type="button" style="position: absolute; left: 680px; top: 5px; height: 35px; width: 200px;">Limpeza</button>
+    </div> <!--final da DIV de botoes setores-->
+  </div> <!--o final da DIV do bloco branco central-->
+</body>
+
+</html>

@@ -1,13 +1,13 @@
-function verificar() {
+function verificar2() {
     const usuario = document.getElementById("user").value;
     const senha = document.getElementById("senha").value;
 
     const usuarioCorreto = "vampeta";
-    const senhaCorreta = "vampeta69";
+    const senhaCorreta = "vampeta67";
 
     if (usuario === usuarioCorreto && senha === senhaCorreta) {
         
-        window.location.href = "/selecionar.html"
+        window.location.href = "/estoque.html"
 
     }else{
 

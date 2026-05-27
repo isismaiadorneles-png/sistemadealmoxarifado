@@ -90,8 +90,9 @@ background-color: aliceblue;
 }
 #quadradoAzul{ /*aqui esta a div azul da caixa de login*/
     background-color: #1D3273;
-    height: 550px;
-    width: 380px; 
+    height: 853px;
+    width: 600px; 
+
 }
 #botaoentrar{/*aqui é configuraçoes do botao laranja de entrar*/
     background-color: #F28705;
@@ -129,4 +130,13 @@ background-color: aliceblue;
     left: 780px;
     top: 479px;
     border-radius: 50%;
+}
+#caixadetalhe{
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    top: 350px;
+    left: 750px;
+    background-color: #2E529E;
+    border-radius: 10px;
 }

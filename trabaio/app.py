@@ -2,13 +2,17 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+@app.route('/entrada.html')
+def entrada():
+    return render_template("entrada.html")
+
 @app.route('/login.html')
 def login():
     return render_template("login.html")
 
-@app.route('/selecionar.html')
-def selecionar():
-    return render_template("selecionar.html")
+@app.route('/loginusuario.html')
+def loginusuario():
+    return render_template("loginusuario.html")
 
 @app.route('/index.html')
 def index():

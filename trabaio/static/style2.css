@@ -1,6 +1,7 @@
 /*criação de item*/
 .letras{
-    font-family:verdana ;
+    font-family:Verdana ;
+    color:#eaedef ;
 }
 #input{
     width: 40%;       /* Largura total da div pai */
@@ -9,12 +10,29 @@
     padding: 10px;     /* Espaçamento interno para melhorar aparência*/
 }
 
+/*caixa de texto*/
+#caixa1{
+position:absolute;
+width: 420px;
+height: 50px;
+border-radius: 10px;
+}
 #caixa2{
 position: absolute;
-top: 520px;
+top: 430px;
+width: 430px;
+height: 50px;
+border-radius: 10px;
 }
-
 #caixa3{
 position: absolute;
-top: 630px;
+top: 540px;
+width: 430px;
+height: 50px;
+border-radius: 10px;
+}
+
+/*cor do botao*/
+#botaoconcluir {
+    background-color: #F27405;
 }
