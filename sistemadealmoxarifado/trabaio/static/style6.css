@@ -1,0 +1,64 @@
+.letras{
+    font-family:Verdana ;
+    color:#eaedef ;
+}
+.cordaletra{
+    font-family:Verdana ;
+    color:white ;  
+}
+
+
+/*caixa de texto*/
+#caixa1{
+position:absolute;
+top: 310px;
+width: 430px;
+height: 50px;
+border-radius: 10px;
+}
+#caixa2{
+position: absolute;
+top: 437px;
+width: 430px;
+height: 50px;
+border-radius: 10px;
+}
+#caixa3{
+position: absolute;
+top: 550px;
+width: 430px;
+height: 50px;
+border-radius: 10px;
+}
+
+/*cor do botao*/
+#botaosim {
+    background-color: #F27405;
+    border-radius: 5%; /* Torna o botão circular */
+}
+
+#botaonao {
+    background-color: #F27405;
+    border-radius: 5%; /* Torna o botão circular */
+}
+
+#botaoconcluir{
+    background-color: #AAD5F9;
+    border-radius: 5%;
+
+}
+
+#divprincipal{
+    padding: 10px;
+    width: 100vw;
+    height: 130px;
+    background-color: rgba(0, 92, 170, 1);
+}
+
+#imagesenai{
+    position: absolute;
+    height: 55px;
+    width:  170px;
+    left: 1700px;
+    top: 10px;
+}
