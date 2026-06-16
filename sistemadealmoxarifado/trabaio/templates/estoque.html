@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estoque</title>
-    <script src="../static/estoque.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="/static/style3.css" rel="stylesheet">
@@ -31,7 +30,7 @@
           <a class="nav-link" href="solicitar.html" style="color: aliceblue; font-size: 20px; font-family: Verdana;">Solicitações</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  href="entrada.html"  style="color: aliceblue; font-size: 20px; font-family: Verdana;">Sair</a>
+          <a class="nav-link" href="login.html" style="color: aliceblue; font-size: 20px; font-family: Verdana;">Login</a>
         </li>
         <!--fim da mudança-->
       </ul>
@@ -46,15 +45,18 @@
 <br>
 <div id="caixa-minimizavel" class="caixa"> <!--aqui que mexe tudo pro lugar-->
   <div class="cabeçalho"><!--inicio cabeçalho2-->
-    <button id="botaofiltro" onclick="toggleMinimizar()">
+    <button id="botaofiltro"><!--inicio do botao -->
       <h1 id="janelinha">Filtro<img id="imgfiltro" src="/static/filtro.png"></h1>
-      <span id="seta" class="seta-icone">▼</span>
+      <span id="seta" class="seta-icone">▼</span><!--setinha-->
     </button>
   </div><!--cabeçalho2-->
   <div>
-   <div class="conteudo" id="conteudo-container"><!--abaixo sao os botoes de filtragem das sessoes-->
-     <input type="checkbox" id="ID">
-     <label for="ID">ID</label>
+   <div class="conteudo escondido" id="conteudo-container"><!--abaixo sao os botoes de filtragem das sessoes-->
+    <!--aqui vai vim os checkbox-->
+      <input type="checkbox" id="Mecânica"><!--PARA MECÂNICA-->
+      <label for="Mecânica" id="MecânicaNome">Mecânica</label>
+      <input type="checkbox" id="Elétrica"><!--PARA MECÂNICA-->
+      <label for="Mecânica" id="ElétricaNome">Elétrica</label>
    </div>
   </div>
 </div>
@@ -81,6 +83,7 @@
           </tr>
           {% endfor %}
 </table>
+<script src="../static/estoque.js" defer></script>
 </body>
 
 </html>
