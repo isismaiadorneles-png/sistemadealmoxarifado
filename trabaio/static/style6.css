@@ -34,24 +34,56 @@ border-radius: 10px;
 /*cor do botao*/
 #botaosim {
     background-color: #F27405;
-    border-radius: 5%; /* Torna o botão circular */
+    border-radius: 5px; /* Torna o botão circular */
+    border: none; 
+    cursor: pointer;
+    transition: background-color 0.2s ease;   
+}
+/*muda a cor do botao*/
+#botaosim:active{
+    background-color:#AAD5F9 ;
 }
 
 #botaonao {
     background-color: #F27405;
-    border-radius: 5%; /* Torna o botão circular */
+    border-radius: 5px; /* Torna o botão circular */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+/*muda a cor do botao*/
+#botaonao:active{
+    background-color:#AAD5F9 ;
 }
 
 #botaoconcluir{
     background-color: #AAD5F9;
-    border-radius: 5%;
-
+    color:black;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;   
+}
+/*muda a cor do botao*/
+#botaoconcluir:active{
+    background-color: #F27405;
 }
 
+/*retangulo do senai*/
 #divprincipal{
     padding: 10px;
     width: 100vw;
     height: 130px;
+    background-color: rgba(0, 92, 170, 1);
+}
+/*quadrado no meio da pagina*/
+#quadrado{
+    position:absolute;
+    top:170px;
+    left: 570px;
+    width: 700px;
+    height: 700px;
+    border-radius: 10px;
     background-color: rgba(0, 92, 170, 1);
 }
 
