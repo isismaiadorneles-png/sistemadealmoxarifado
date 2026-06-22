@@ -1,0 +1,44 @@
+CREATE DATABASE TCC;
+
+USE TCC;
+
+CREATE TABLE estoque_almoxarifado (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    quantidade VARCHAR(255),
+    estoque_minimo VARCHAR(255),
+    descrição VARCHAR(255),
+    preço VARCHAR(255),
+    categoria VARCHAR(255)
+);
+INSERT INTO estoque_almoxarifado (nome, quantidade, estoque_minimo, descrição, preço, categoria)
+VALUES ('canetas', '100','10', 'azul','1 real', 'mecânica');
+
+INSERT INTO estoque_almoxarifado (nome, quantidade, estoque_minimo, descrição, preço, categoria)
+VALUES ('luvas', '50', '25', 'branca', '10 reais', 'mecânica');
+
+INSERT INTO estoque_almoxarifado (nome, quantidade, estoque_minimo, descrição, preço, categoria)
+VALUES ('parafusos', '1000', '100', 'pequeno', '50 centavos', 'mecânica');
+
+INSERT INTO estoque_almoxarifado (nome, quantidade, estoque_minimo, descrição, preço, categoria)
+VALUES ('detergente', '20', '5', '500 ml', '5 reais', 'geral');
+
+INSERT INTO estoque_almoxarifado (nome, quantidade, estoque_minimo, descrição, preço, categoria)
+VALUES ('lampadas', '150', '20', 'cor branca', '5 reais', 'elétrica');
+
+INSERT INTO estoque_almoxarifado (nome, quantidade, estoque_minimo, descrição, preço, categoria)
+VALUES ('teclado', 20, '5', 'mecanico', '50 reais', 'elétrica');
+
+INSERT INTO estoque_almoxarifado (nome, quantidade, estoque_minimo, descrição, preço, categoria)
+VALUES ('fita', '43', '10', 'crepe', '10 reaia', 'geral');
+
+INSERT INTO estoque_almoxarifado (nome, quantidade, estoque_minimo, descrição, preço, categoria)
+VALUES ('caixa', '20', '1', 'papelao', '5 reais', 'geral');
+
+INSERT INTO estoque_almoxarifado (nome, quantidade, estoque_minimo, descrição, preço, categoria)
+VALUES ('lubrificante', '30', '5', 'deixar bem gostoso', '30 reais', 'mecânica');
+
+INSERT INTO estoque_almoxarifado (nome, quantidade, estoque_minimo, descrição, preço, categoria)
+VALUES ('impressora', '5', '1', 'todas coloridas', '1000 reais', 'geral');
+
+SELECT * FROM estoque_almoxarifado;
